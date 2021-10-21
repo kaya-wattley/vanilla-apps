@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>The Hookup</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
+      <meta name="description" content="Notes on the different type of state and lifecycle hooks">
+      <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+      <header aria-label="header">
+          <nav aria-label="navigation bar">
+            <div aria-label="app logo" id="logo" class="logo">
+              <img src="./icons/hook.png" alt="hook logo" class="hook-icon">
+              <span aria-label="app title" id="title" class="title">The HookUp</span>
+            </div>
+            <ul aria-label="navigation tabs" id="nav-tabs" class="nav-tabs">
+              <li><a href="./pages/react-hooks.html"><i aria-label="react navigation" id="react-icon" class="react-icon"></i></a></li>
+              <li><a href="#"><i aria-label="angular navigation" id="angular-icon" class="angular-icon"></i></a></li>
+              <li><a href="#"><i aria-label="vue navigation" id="vue-icon" class="vue-icon"></i></a></li>
+            </ul>
+          </nav>
+      </header>
+      <main aria-label="main section">
+        <p aria-label="overview" class="overview">
+          Welcome to The HookUp, a site about the many different hooks from The Big 3 UI frameworks and library. 
+          Click on one of the logos below, or one of the icons in the header above, to learn about hooks for either
+          Angular, React or Vue.
+        </p>
+        <section aria-label="javascript options" class="option-container">
+          <div aria-label="react navigation" id="angular-logo" class="option-column">
+            <a href="./pages/react-hooks.html"><img src="./icons/react_logo.png" alt="react logo" class="react-logo"></a>
+          </div>
+          <div aria-label="angular navigation" id="angular-logo" class="option-column">
+            <a href="#"><img src="./icons/angular_logo.png" alt="angular logo" class="angular-logo"></a>
+          </div>
+          <div aria-label="vue navigation" id="vue-logo" class="option-column">
+            <a href="#"><img src="./icons/vuejs_logo.png" alt="vue logo" class="vue-logo"></a>
+          </div>
+        </section>
+      </main>
+      <footer aria-label="footer">
+        <h4>Helpful Links</h4>
+        <section aria-label="react helpful links" class="footer-section">
+          <h5>React</h5>
+          <a id="react-links" href="https://reactjs.org/docs/hooks-intro.html">Introducing Hooks</a>
+        </section>
+        <section araia-label="angular helpful links" class="footer-section">
+          <h5>Angular</h5>
+          <a id="angular-links" href="https://angular.io/guide/lifecycle-hooks">Lifecycle Hooks</a>
+        </section>
+        <section aria-label="vue helpful links" class="footer-section">
+          <h5>Vue</h5>
+          <a id="vue-links" href="https://v3.vuejs.org/api/options-lifecycle-hooks.html">Lifecycle Hooks</a>
+        </section>
+      </footer>
+    </body>
+</html>
