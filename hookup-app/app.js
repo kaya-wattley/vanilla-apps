@@ -18,7 +18,7 @@ class ToggleArrow extends HTMLElement {
     this.ariaRoleDescription = 'toggle hook content';
     this.ariaLabel = 'Toggle';
 
-    this.addEventListener('click', e => {
+    this.onclick = e => {
       let hook = e.target.id;
       const noteSection = document.getElementById(`${hook}-notes`);
       const hookSection = document.getElementById(`${hook}-section`);
@@ -31,11 +31,47 @@ class ToggleArrow extends HTMLElement {
       } else {
         noteSection.style.display = 'block';
       }
-    });
+    };
   }
 }
 
 customElements.define('toggle-button', ToggleArrow);
+
+
+class ContentSection extends HTMLElement {
+
+  createSection() {
+    const hooks = [
+      'useState', 
+      'useEffect', 
+      'useContext', 
+      'useReducer',
+      'useCallback',
+      'useMemo',
+      'useRef',
+      'useImperativeHandle',
+      'useLayoutEffect',
+      'useDebugValue'
+    ];
+
+    hooks.forEach((hook) => {
+      this.innerHTML += `<section aria-label="${hook} section" class="note-section" id="${hook}-section">
+                          <div class="hook-name">${hook} <toggle-button aria-label="${hook} toggle" id="${hook}" class="right"/></div>
+                          <div aria-label="${hook} notes" id="${hook}-notes" class="note"></div>
+                        </section>`
+    });
+  }
+
+  constructor() {
+    super();
+
+    window.onload = () => {
+      this.createSection();
+    }
+  }
+}
+
+customElements.define('content-section', ContentSection);
 
 const noContent = `<div><b>Coming Soon</b></div>`;
 
