@@ -103,6 +103,29 @@ a:active {
   font-weight: bolder;
   line-height: 28px;
   color: #61DBFB;
+  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.angular-name {
+  margin-left: -10px;
+  margin-top: 35px;
+  font-size: 2.1rem;
+  font-weight: bolder;
+  line-height: 28px;
+  color: #dd1b16;
+  text-shadow: 1px 0 0 #a6120d, 0 -1px 0 #a6120d, 0 1px 0 #a6120d, -1px 0 0 #a6120d;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.vue-name {
+  margin-left: 25px;
+  margin-top: 35px;
+  font-size: 2.1rem;
+  font-weight: bolder;
+  line-height: 28px;
+  color: #42b883;
+  text-shadow: 1px 0 0 #35495e, 0 -1px 0 #35495e, 0 1px 0 #35495e, -1px 0 0 #35495e;
   font-family: 'Roboto Mono', monospace;
 }
 
@@ -124,6 +147,25 @@ nav {
 
 nav li, note li {
   list-style: none;
+}
+
+/* coming soon text and logo */
+
+.coming-soon {
+  margin-top: 5%;
+  margin-left: 40%;
+}
+
+.maintenance-logo {
+  width: 30%;
+}
+
+.coming-soon-text {
+  margin-left: 28%;
+  color: rgb(117, 113, 113);
+  font-size: 90px;
+  font-weight: bolder;
+  font-family: 'Roboto Mono', monospace;
 }
 
 /* main page main text */
