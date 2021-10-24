@@ -3,14 +3,13 @@
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
-  "type": "commonjs",
   "scripts": {
-    "start": "lite-server",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "parcel ./index.html ./pages/*.html",
+    "build": "parcel build ./pages/*.html"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "lite-server": "^2.6.1"
+    "parcel-bundler": "^1.12.5"
   }
 }
