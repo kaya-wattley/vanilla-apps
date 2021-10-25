@@ -3,6 +3,7 @@ import * as reactContent from "../hook-content/react-content";
 export class ToggleArrow extends HTMLElement {
 
   content(hookName) {
+    let noContent = '<div>Coming Soon</div>';
     let getNotes =  {
       'useState': reactContent.useState(),
       'useEffect': reactContent.useEffect()
