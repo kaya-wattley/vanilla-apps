@@ -6,8 +6,9 @@ export class ToggleArrow extends HTMLElement {
     let noContent = '<div>Coming Soon</div>';
     let getNotes =  {
       'useState': reactContent.useState(),
-      'useEffect': reactContent.useEffect()
-    }
+      'useEffect': reactContent.useEffect(),
+      'useContext': reactContent.useContext()
+    };
 
     let hookContent = getNotes[hookName];
 

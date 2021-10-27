@@ -247,6 +247,9 @@ main p {
 }
 
 /* code styling */
+pre {
+  margin-left: -130px;
+}
 
 .comment {
   color: olivedrab;
@@ -266,41 +269,6 @@ main p {
 
 .tag {
   color: rgb(0, 162, 255);
-}
-
-.tab {
-  margin-left: 20px !important;
-}
-
-.tab-2 {
-  margin-left: 60px !important;
-}
-
-.tab-3 {
-  margin-left: 80px !important;
-}
-
-.tab-4 {
-  margin-left: 100px !important;
-}
-
-.no-padding {
-  padding: 0px;
-}
-
-.code-line {
-  margin-top: -35px;
-  margin-left: 20px;
-  display: block;
-  padding: 10px;
-}
-
-.code-margin {
-  margin-top: -50px;
-}
-
-.code-line-no-margin {
-  display: block;
 }
 
 /* footer */
